@@ -1,0 +1,15 @@
+Query 5
+Send Feedback
+You have to send the monthly report of the movie releases. Find the total months in which movies were released.
+https://files.codingninjas.in/untitled2-14308.png
+
+Note: Write aggregate functions in uppercase alphabets
+
+
+
+Solution
+
+
+
+
+select count(distinct ReleaseMonth) from movies

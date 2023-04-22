@@ -1,0 +1,12 @@
+Query 3
+Send Feedback
+Lets analyse the overall ratings for particular months. What is the average rating of all the movies released in the months of June and august?
+https://files.codingninjas.in/untitled2-14308.png
+
+Note: Write aggregate functions in uppercase alphabets
+
+
+
+Solution
+
+select avg(Rating) FROM MOVIES where ReleaseMonth = 'June' or ReleaseMonth = 'August';

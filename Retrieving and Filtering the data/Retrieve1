@@ -1,0 +1,19 @@
+Retrieve
+Send Feedback
+It is well noticed through the previous question that there are different types of productLine available. Write a query to display all the types of productLine (distinct).
+Table- products
+productCode        | varchar(15)   |
+productName        | varchar(70)   | 
+productLine        | varchar(50)   | 
+productScale       | varchar(10)   | 
+productVendor      | varchar(50)   | 
+productDescription | text          | 
+quantityInStock    | smallint      | 
+buyPrice           | decimal(10,2) | 
+MSRP               | decimal(10,2) | 
+
+
+Solution
+
+
+select distinct productLine from products;

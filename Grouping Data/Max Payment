@@ -1,0 +1,20 @@
+Max Payment
+Send Feedback
+Consider the payments table in classicmodels database. It stores payments made by customers based on their accounts.
+Payments table
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000906_1671720991_payments_sample.png
+
+
+Further you want to analyze the daily payment schedule. Write a query to find out the maximum amount paid each day.
+The result set should have payment date and its corresponding maximum amount of payment made that day.
+Expected Output
+
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000908_1671721876_Max%20Payment%20Output.png
+
+
+Solution
+
+
+select paymentDate,  max(amount) from payments group by paymentDate;

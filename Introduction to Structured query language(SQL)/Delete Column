@@ -1,0 +1,13 @@
+
+Send Feedback
+Delete Column-ContactNumber of table- Students.
+Describe the table after deleting the column.
+
+
+
+Solution
+
+ALTER TABLE Students
+ADD DOB Date;
+
+Desc Students;

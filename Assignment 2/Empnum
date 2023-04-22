@@ -1,0 +1,17 @@
+Empnum
+Send Feedback
+You have been provided with the employee_data table. The sample for this table is provided below.
+employee_data
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000931_1671859440_employee_data_sample.png
+
+Problem Statement
+Fetch the number of employees for each role/Job.
+Note: Name the number of employees as "empnum" using Alias Keyword.
+Expected Output
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000932_1671859852_Empnum_output.png
+
+Solution
+
+select job,count(EmpCode) as empnum from Employee_data  group by job;

@@ -1,0 +1,12 @@
+Find the highest reaction by audience, that is the total number of likes and dislikes for a movie.
+https://files.codingninjas.in/untitled2-14308.png
+
+Note: Write aggregate functions in uppercase alphabets and if using any operator add space before and after it.
+ Example: 'A + B' and not  'A+B'
+ 
+ 
+ 
+ Solution
+ 
+ 
+ select max(Likes + Dislikes) from movies ;

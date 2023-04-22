@@ -1,0 +1,23 @@
+Problem Statement:
+Enlist all the employees ID's, names along with the Project allocated to them.
+
+Information about the table:
+Table Employee: 
+https://files.codingninjas.in/bq-12762.PNG
+Table Project: 
+https://files.codingninjas.in/b4-12763.PNG
+Table Client_d: 
+https://files.codingninjas.in/b3-12761.PNG
+
+Output Table Structure:
+https://files.codingninjas.in/jt-query-1-16288-16338.png
+
+Note-1: Write keywords of syntax in uppercase alphabets.
+Note-2: Use employee ID to link the two tables.
+
+
+Solution
+
+
+select Employee.EmpId, Employee.EmpFname, Employee.EmpLname, Project.ProjectID, Project.ProjectName from Employee 
+inner join Project on Employee.EmpID = Project.EmpID;

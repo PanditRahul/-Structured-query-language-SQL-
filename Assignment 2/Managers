@@ -1,0 +1,16 @@
+Managers
+Send Feedback
+You have been provided with the employee_data table. The sample for this table is provided below.
+employee_data
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000931_1671859440_employee_data_sample.png
+Problem Statement
+List down the managers handling more than 2 employees, and make sure those employees don’t belong to departments 10 and 20. 
+Note: The result set should have the manager's id and its corresponding number of employees named as "Number of Employees".
+Expected Output
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000937_1671861529_Manager_output.png
+
+
+
+Solution
+
+SELECT Manager, COUNT(Manager) FROM Employee_data WHERE DeptCode NOT IN (10,20) GROUP BY Manager HAVING COUNT(Manager) > 2;

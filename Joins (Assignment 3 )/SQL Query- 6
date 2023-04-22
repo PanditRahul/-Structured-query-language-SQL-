@@ -1,0 +1,21 @@
+SQL Query- 6
+Send Feedback
+Problem Statement:
+List out all the client details email address, whose age is between 25 to 35, along with the projects assigned to them in ascending order of their age and project ID. Also, use c for client_d and p for project, as alias name of tables.
+
+Information about the table:
+Table Employee: https://files.codingninjas.in/bq-12762.PNG
+Table Project: https://files.codingninjas.in/table_2-16577.png
+Table Client_d: https://files.codingninjas.in/b3-12761.PNG
+
+Output Table Structure:
+
+https://files.codingninjas.in/jt-query-6-16347.png
+
+Note-1: Write keywords of syntax in uppercase alphabets.
+Note-2: Use client ID to link the two tables.
+
+Solution
+
+
+select c.ClientID,c.ClientFname,c.ClientLname,c.ClientEmailID,p.ProjectID,p.ProjectName from Client_d c join Project p on c.ClientID = p.clientID where Age between 25 and 35 order by AGE AND ProjectID;

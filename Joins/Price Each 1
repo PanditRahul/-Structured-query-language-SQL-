@@ -1,0 +1,46 @@
+Price Each
+Send Feedback
+Consider the following three tables.
+Table- orders
+orderNumber       | int                | 
+orderDate            | date             | 
+requiredDate       | date             | 
+shippedDate        | date             | 
+status                   | varchar(15) | 
+comments            | text              | 
+customerNumber | int                |
+
+Table- orderdetails
+orderNumber       | int                   | 
+productCode        | varchar(15)    | 
+quantityOrdered   | int                   | 
+priceEach             | decimal(10,2) | 
+orderLineNumber | smallint           |
+
+Table- customers
+customerNumber                  | int                 | 
+customerName                     | varchar(50)   |
+contactLastName                 | varchar(50)   | 
+contactFirstName                 | varchar(50)   | 
+phone                                   | varchar(50)   |
+addressLine1                        | varchar(50)   | 
+addressLine2                        | varchar(50)   | 
+city                                        | varchar(50)   | 
+state                                      | varchar(50)   | 
+postalCode                            | varchar(15)   | 
+country                                  | varchar(50)   | 
+salesRepEmployeeNumber  | int                  | 
+creditLimit                             | decimal(10,2) | 
+Get sum of priceeach from orderdetails table for customer name ’Atelier graphique’ from customers table matching orderNumber from orders table.
+Expected Output
++-----------------------------+
+| SUM(orderdetails.priceEach) |
++-----------------------------+
+
+
+SOlution
+
+SELECT SUM(orderdetails.priceEach) FROM orderdetails 
+INNER JOIN orders ON orderdetails.orderNumber= orders.orderNumber 
+INNER JOIN customers ON orders.customerNumber=customers.customerNumber
+WHERE customers.customerName='Atelier graphique';

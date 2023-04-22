@@ -1,0 +1,19 @@
+Retrieve
+Send Feedback
+As analyzed from the previous question, there are alot of rows in the products table. You want to work on a small segment of data. Retrieve the first 15 rows from the products table.
+Table- products
+productCode        | varchar(15)   |
+productName        | varchar(70)   | 
+productLine        | varchar(50)   | 
+productScale       | varchar(10)   | 
+productVendor      | varchar(50)   | 
+productDescription | text          | 
+quantityInStock    | smallint      | 
+buyPrice           | decimal(10,2) | 
+MSRP               | decimal(10,2) | 
+
+
+Solution
+
+
+select * from products limit 15;

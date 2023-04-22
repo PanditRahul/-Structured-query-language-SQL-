@@ -1,0 +1,19 @@
+Office
+Send Feedback
+Analyze the employees' table.
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000896_1671690683_employees_sample.png
+
+Next, you want to survey all the offices. Get the number of employees working in each office.
+ 1. Print officeCode column as "Office Code".
+
+ 2. Print number of employees column as "Employees Count".
+Expected Output
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000901_1671691560_Office%20Code%20Output.png
+
+
+
+Soltuion
+
+Select officeCode, count(*) from employees group by officeCode;

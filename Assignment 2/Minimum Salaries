@@ -1,0 +1,18 @@
+Minimum Salaries
+Send Feedback
+You have been provided with the employee_data table. The sample for this table is provided below.
+employee_data
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000931_1671859440_employee_data_sample.png
+Problem Statement
+List down the minimum salaries offered for each job role in each department, also list them in descending order based on the max salaries being offered for that role.
+Note: The result set should have the job name, its department code and its corresponding minimum salary.
+Expected Output
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000934_1671860576_Minimum_salaries_output.png
+
+
+Solution
+
+
+select job,DeptCode,min(salary) from Employee_data group by job,DeptCode order by max(salary) desc;

@@ -1,0 +1,15 @@
+Product Lines
+Send Feedback
+Given below is the details about the products table. products table stores a list of scale model cars.
+Table- products
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000921_1671787973_products_table_sample.png
+
+Write a SQL Query to get different product Lines except 'Ships' and 'Planes' whose MSRP is in between 50 and 90.
+Expected Output
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000927_1671796727_Product%20Lines%201.png
+
+
+
+Solution
+
+select distinct productLine from products where MSRP between 50 and 90 and productLine not in ('Ships','Planes'); 

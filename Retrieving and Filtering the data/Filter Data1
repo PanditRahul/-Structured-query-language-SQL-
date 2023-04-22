@@ -1,0 +1,16 @@
+Filter Data
+Send Feedback
+The company wants to check the orders only where orderLineNumber is provided. Print out all the details of the orders where orderLineNumber is not NULL.
+Table- orderdetails
+orderNumber       | int                   | 
+productCode        | varchar(15)    | 
+quantityOrdered   | int                   | 
+priceEach             | decimal(10,2) | 
+orderLineNumber | smallint           |
+
+
+
+
+Solution
+
+select * from orderdetails where orderLineNumber is not null

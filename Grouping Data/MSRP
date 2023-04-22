@@ -1,0 +1,14 @@
+MSRP
+Send Feedback
+Given below is the details about the products table. products table stores a list of scale model cars.
+Table- products
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000921_1671787973_products_table_sample.png
+As researched before there are multiple products available with different retail prices. You want to look at the information in the products table with respect to the MSRP. Write a query to print all the details of all the products in descending order of their MSRP.
+Expected Output
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000922_1671788153_MSRP_output.png
+
+
+Solution
+
+
+select * from products order by MSRP desc;

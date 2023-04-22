@@ -1,0 +1,17 @@
+Product Lines
+Send Feedback
+Given below are the details of the “products” table. It stores a list of scale model cars.
+Table- products
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000921_1671787973_products_table_sample.png
+
+Find the distinct productLine where the quantityInStock is not in the range 80 to 8000, and MSRP is between 50 and 90.
+Expected Output
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000928_1671796889_Product%20Lines%202.png
+
+
+
+Solution
+
+
+select distinct(productLine) from products where quantityInStock Not between 80 and 8000 and MSRP  between 50 and 90;

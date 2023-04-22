@@ -1,0 +1,24 @@
+Sum
+Send Feedback
+Given below are the details about the products table. the products table stores a list of scale model cars.
+Table- products
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000921_1671787973_products_table_sample.png
+The company has various products with different availability status. Write a Query to find out all the productLine and their respective total QuantityInStock where QuantityInStock for each ProductLine is greater than 50000.
+Aliases for the output columns
+productLine AS "Product Line",
+SUM(quantityInStock) as "Sum of Stocks" 
+
+Expected Output
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000923_1671788445_Sum%20of%20stocks%20output.png
+
+
+Solution
+
+
+select productLine, sum(quantityInStock) from  products group by productLine having sum(quantityInStock)>50000;
+
+SOlution
+
+
+select productLine, sum(quantityInStock) from  products group by productLine having sum(quantityInStock)>50000;

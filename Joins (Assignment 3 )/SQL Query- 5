@@ -1,0 +1,21 @@
+SQL Query- 5
+Send Feedback
+Problem Statement:
+List out all the projects along with the employee's name and their respective allocated email ID.
+
+Information about the table:
+Table Employee: https://files.codingninjas.in/bq-12762.PNG
+Table Project: https://files.codingninjas.in/table_2-16577.png
+Table Client_d: https://files.codingninjas.in/b3-12761.PNG
+
+Output Table Structure:
+https://files.codingninjas.in/jt-query-5-16346.png
+
+Note-1: Write keywords of syntax in uppercase alphabets.
+Note-2: Use employee ID to link the two tables.
+
+
+Solution
+
+
+select Project.ProjectID,Project.ProjectName,Employee.EmpFname,Employee.EmpLname,Employee.EmailID from Project left join Employee on Project.EmpID = Employee.EmpID

@@ -1,0 +1,25 @@
+SQL Query - 3
+Send Feedback
+Problem Statement:
+List out all the project names with corresponding client’s email id, for all the projects that were allocated after April 2021 and order them in descending order of the age of clients.
+
+Information about the table:
+Table Employee: 
+https://files.codingninjas.in/bq-12762.PNG
+Table Project: 
+https://files.codingninjas.in/table_2-16577.png
+Table Client_d: 
+https://files.codingninjas.in/15084-17774.jpg
+
+Output Table Structure:
+https://files.codingninjas.in/jt-query-3-16344.png
+
+Note-1: Write keywords of syntax in uppercase alphabets.
+Note-2: Use client ID to link the two tables
+
+
+
+SOlution
+
+select Project.ProjectName , Client_d.ClientEmailID from Project  join Client_d on Project.ClientID = Client_d.ClientID 
+WHERE ProjectStartDate >= '2021-04-30'  order by Age desc ;

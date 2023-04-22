@@ -1,0 +1,11 @@
+
+Send Feedback
+As a data analyst in the media business, you are asked to analyze the latest movie dataset.
+https://files.codingninjas.in/untitled2-14308.png
+Your first task is to find the least likes got by any movie.
+Note: Write aggregate functions in uppercase alphabets
+
+
+Solution
+
+select min(Likes) from movies;

@@ -1,0 +1,13 @@
+Rename Column
+Send Feedback
+Rename column 'sName' to 'FullName' in Students table.
+Describe the table.
+
+
+
+Solution
+
+
+
+alter table Students change sName FullName varchar(50);
+desc Students;

@@ -1,0 +1,26 @@
+Credit Limit
+Send Feedback
+Given below are the details of customers table. It is one of the tables in classicmodels database. customers stores customer’s data.
+customers table schema
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000902_1671720289_customers_schema.png
+
+customers table sample split into two images:
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000903_1671720298_customers_sample_1.png
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000904_1671720305_customers_sample_2.png
+
+
+Next task you have is to analyze all the customers. Find the average credit limit of all the customers state-wise.
+Result set should have a state named "State" and its corresponding average credit limit named "Average Credit Limit".
+Expected Output
+
+https://classroom.codingninjas.com/app/classroom/me/20500/content/414372/offering/5937858/problem/16984
+
+
+
+Solution
+
+
+Select state, Avg(creditLimit) from customers group by state

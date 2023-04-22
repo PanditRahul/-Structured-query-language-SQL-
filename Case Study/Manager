@@ -1,0 +1,25 @@
+Manager
+Send Feedback
+You realised that there are three segments of products: Consumer, Corporate and Home office. You ask your manager to provide you a list of the people who are managing these segments. Unfortunately these are not present in the database. Since you want to digitise the system, you plan to put the data in the database. He provides you the data on a sheet of paper as follows:
+Segment - Varchar(100)
+Segment_Manager- Varchar(100)
+Write a query to create a table in the database with Name as Manager and with values provided. Do assign proper Primary key.
+
+
+https://files.codingninjas.in/manager-14237.png
+
+
+Solution
+
+
+Create Table Manager(
+Segment varchar(100),
+Segment_Manager varchar(100),
+Primary key (Segment)
+);
+Insert into Manager Values
+('Consumer','Gaganjit Singh'),
+('Corporate', 'Aman Jain'),
+('Home Office','Kush Arora');
+
+Select* from Manager;

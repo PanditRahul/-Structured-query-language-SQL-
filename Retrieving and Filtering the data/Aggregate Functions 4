@@ -1,0 +1,21 @@
+Aggregate Functions
+Send Feedback
+Find the minimum buyPrice from products table where productLine is not Trucks and Buses.
+Table- products
+productCode        | varchar(15)   |
+productName        | varchar(70)   | 
+productLine        | varchar(50)   | 
+productScale       | varchar(10)   | 
+productVendor      | varchar(50)   | 
+productDescription | text          | 
+quantityInStock    | smallint      | 
+buyPrice           | decimal(10,2) | 
+MSRP               | decimal(10,2) | 
+Note: Write aggregate functions in uppercase alphabets
+
+
+Solution
+
+
+
+SELECT MIN(buyPrice) from products;

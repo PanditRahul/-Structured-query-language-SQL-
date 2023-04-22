@@ -1,0 +1,36 @@
+Price Each
+Send Feedback
+Consider the following two tables.
+Table- orders
+orderNumber       | int                | 
+orderDate            | date             | 
+requiredDate       | date             | 
+shippedDate        | date             | 
+status                   | varchar(15) | 
+comments            | text              | 
+customerNumber | int                |
+
+Table- orderdetails
+orderNumber       | int                   | 
+productCode        | varchar(15)    | 
+quantityOrdered   | int                   | 
+priceEach             | decimal(10,2) | 
+orderLineNumber | smallint           |
+Get sum of priceEach for orderNumber 10300 and customerNumber = 128 from order and orderdetails table.
+Expected Output
++-----------------------------+
+| SUM(orderdetails.priceEach) |
++-----------------------------+
+|                      798.48 |
++-----------------------------+
+
+
+
+SOlution
+
+
+SELECT SUM(orderdetails.priceEach) FROM orderdetails
+INNER JOIN orders 
+ON orderdetails.orderNumber=orders.ordernumber
+WHERE orderdetails.orderNumber=10300
+AND orders.customerNumber=128;

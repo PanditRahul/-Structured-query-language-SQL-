@@ -1,0 +1,29 @@
+Update
+Send Feedback
+While going through the data set you found out that the State column in the Orders table also contains Union territories and found a mistake.
+You found that for Chandigarh the city is marked as Delhi. You pointed out this mistake to database manager and he asks you to update the table
+Write the query to update the city as Chandigarh where the State is Chandigarh.
+Print all the contents of the table after updating.
+Refer table-orders
+Order_ID(VARCHAR) - Primary Key for each order placed
+Order_Date(VARCHAR) - when was the order placed
+Ship_Date(VARCHAR) - when was the order shipped
+Customer_ID(VARCHAR) -ID of the customer who placed the order
+Segment(VARCHAR) - to which segment does the product sold belongs to
+State(VARCHAR) - State where the order was placed
+City(VARCHAR) - City where the order was placed
+Product_ID(VARCHAR) - ID of the product sold
+Category(VARCHAR) - Category of the product Sold
+SubCategory(VARCHAR) - Sub category of the product Sold
+Product_Name(VARCHAR) - Name of the product sold
+Sales(DOUBLE) -Sale price of the order
+Quantity(DOUBLE) - Quantity of product for which order was placed
+Discount(DOUBLE) - % Discount offered on the MRP
+Profit(DOUBLE) - Total Profit made on the order
+
+
+Solution
+
+
+update orders set city = 'chandigarh' where state = 'chandigarh' ;
+select * from orders ;

@@ -1,0 +1,23 @@
+Update
+Send Feedback
+A new shipment was received for the productCode- S10_1949 . The updated quantity in stock for this product becomes 8000. Make the changes in the dataset to reflect this update.
+Print out productCode,productName and respective quantityinstock for the productCode- S10_1949.
+Table- products
+productCode        | varchar(15)   |
+productName        | varchar(70)   | 
+productLine        | varchar(50)   | 
+productScale       | varchar(10)   | 
+productVendor      | varchar(50)   | 
+productDescription | text          | 
+quantityInStock    | smallint      | 
+buyPrice           | decimal(10,2) | 
+MSRP               | decimal(10,2) | 
+
+
+
+
+Solution
+
+
+UPDATE products SET quantityInStock=8000 WHERE productCode='S10_1949';
+SELECT productCode, productName, quantityInStock FROM products WHERE productCode='S10_1949';

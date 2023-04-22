@@ -1,0 +1,34 @@
+orders-customers
+Send Feedback
+Consider the following two tables.
+Table- orders
+orderNumber       | int                | 
+orderDate            | date             | 
+requiredDate       | date             | 
+shippedDate        | date             | 
+status                   | varchar(15) | 
+comments            | text              | 
+customerNumber | int                |
+
+Table- customers
+customerNumber                  | int                 | 
+customerName                     | varchar(50)   |
+contactLastName                 | varchar(50)   | 
+contactFirstName                 | varchar(50)   | 
+phone                                   | varchar(50)   |
+addressLine1                        | varchar(50)   | 
+addressLine2                        | varchar(50)   | 
+city                                        | varchar(50)   | 
+state                                      | varchar(50)   | 
+postalCode                            | varchar(15)   | 
+country                                  | varchar(50)   | 
+salesRepEmployeeNumber  | int                  | 
+creditLimit                             | decimal(10,2) | 
+As an analyst your job is to visualize different scenarios. Currently, you want to know all the orders linked to customers. Join the two tables so that the resulting set has the data that are common in both the tables.
+Print orderNumber for such orders.
+
+
+Solution
+
+
+select orders.orderNumber from orders inner join customers ON orders.customerNumber=customers.customerNumber

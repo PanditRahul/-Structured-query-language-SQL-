@@ -1,0 +1,18 @@
+Employees
+Send Feedback
+Analyze the employees' table. It stores all employee information as well as the organization structure such as who reports to whom.
+employees Table
+
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000896_1671690683_employees_sample.png
+The sales manager is analyzing the employees which report to him alphabetically. Write a SQL Query to get details of those employees whose first name starts with ‘L’ and reports to 1143.
+The result set should have the first and last name of the employees
+Expected Output
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000929_1671797215_Employees%20L.png
+
+
+Solution
+
+
+select firstName,lastName from employees where firstName like "L%" and reportsTo= 1143

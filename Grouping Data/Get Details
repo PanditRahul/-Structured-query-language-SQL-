@@ -1,0 +1,16 @@
+Get Details
+Send Feedback
+Analyze the employees table.
+employees Table
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000896_1671690683_employees_sample.png
+
+You want to send in the reports of all the employees to the President and VP of sales.
+Write a SQL Query to get the employee number of those employees who don't report to President and VP sales.
+Expected Output
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000926_1671796480_Get%20Details.png
+
+
+Solution
+
+select employeeNumber from employees where reportsto not in (1002,1056);

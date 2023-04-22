@@ -1,0 +1,15 @@
+
+Send Feedback
+Add new column 'DOB' for storing the Date of Birth of the students in Students table.
+  DOB- date type
+Describe the Students table once the column is added.
+
+
+
+Solution
+
+
+ALTER TABLE Students
+ADD DOB Date;
+
+Desc Students;

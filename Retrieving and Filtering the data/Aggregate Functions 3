@@ -1,0 +1,18 @@
+Aggregate Functions
+Send Feedback
+Find the average MSRP of the products with the productScale either 1:12 or 1:18;
+Table- products
+productCode        | varchar(15)   |
+productName        | varchar(70)   | 
+productLine        | varchar(50)   | 
+productScale       | varchar(10)   | 
+productVendor      | varchar(50)   | 
+productDescription | text          | 
+quantityInStock    | smallint      | 
+buyPrice           | decimal(10,2) | 
+MSRP               | decimal(10,2) | 
+Note: Write aggregate functions in uppercase alphabets
+
+Solution
+
+SELECT AVG(MSRP) FROM products WHERE productScale = '1:12'  or productScale = '1:18';

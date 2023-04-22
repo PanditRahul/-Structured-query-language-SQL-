@@ -1,0 +1,16 @@
+Sum Price
+Send Feedback
+Consider the payments table in classicmodels database. It stores payments made by customers based on their accounts.
+Payments table
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000906_1671720991_payments_sample.png
+
+Now you want to look at the payments made by the customers. Write a SQL Query to get sum of price paid by customerNumber 473 on 2003-10-27 from payments table;
+Expected Output
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000907_1671721405_Sum%20Price%20Output.png
+
+
+Solution
+
+
+Select sum(amount) from payments where paymentDate='2003-10-27' and customerNumber ='473' group by customerNumber;

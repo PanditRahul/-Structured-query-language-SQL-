@@ -1,0 +1,20 @@
+Filter Data
+Send Feedback
+Given below are the details of orderdetails table. It is one of the tables in classicmodels database. orderdetails stores sales order line items for each sales order.
+Table- orderdetails
+orderNumber       | int                   | 
+productCode        | varchar(15)    | 
+quantityOrdered   | int                   | 
+priceEach             | decimal(10,2) | 
+orderLineNumber | smallint           |
+The company wants to check how many of their products are in high demand. Get orderNumber of those orders where ordered quantity is equal to 59 and price of each products is greater than 100.
+Result should have only orderNumber.
+
+
+Solution
+
+
+
+select orderNumber from orderdetails 
+where quantityordered=59
+and priceEach >100;

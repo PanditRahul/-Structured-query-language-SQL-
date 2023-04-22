@@ -1,0 +1,21 @@
+Aggregate Functions
+Send Feedback
+Now that we know there are different types of products available in the company. Find the total number (quantity in stock) of motorcycles in products table. 'Motorcycles' is one of the productLines in products table.
+Table- products
+productCode        | varchar(15)   |
+productName        | varchar(70)   | 
+productLine        | varchar(50)   | 
+productScale       | varchar(10)   | 
+productVendor      | varchar(50)   | 
+productDescription | text          | 
+quantityInStock    | smallint      | 
+buyPrice           | decimal(10,2) | 
+MSRP               | decimal(10,2) | 
+Note: Write aggregate functions in uppercase alphabets
+
+
+
+Solution
+
+
+SELECT SUM(quantityInStock) FROM products where productLine='Motorcycles';

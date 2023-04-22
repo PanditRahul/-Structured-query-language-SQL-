@@ -1,0 +1,19 @@
+Retrieve
+Send Feedback
+You want to get an idea of what type of products are available. Retrieve the first 10 distinct productName and their respective productLine from the products table.
+Table- products
+productCode        | varchar(15)   |
+productName        | varchar(70)   | 
+productLine        | varchar(50)   | 
+productScale       | varchar(10)   | 
+productVendor      | varchar(50)   | 
+productDescription | text          | 
+quantityInStock    | smallint      | 
+buyPrice           | decimal(10,2) | 
+MSRP               | decimal(10,2) | 
+
+
+Solution
+
+SELECT DISTINCT productName,ProductLine FROM products LIMIT 10;
+

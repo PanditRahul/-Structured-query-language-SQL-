@@ -1,0 +1,16 @@
+Employees Number
+Send Feedback
+Analyze the employees table. employees table is one of the tables in classicmodels database. It stores all employee information as well as the organization structure such as who reports to whom.
+employees Table
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000896_1671690683_employees_sample.png
+
+You want to segment the employees with respect to their post. Write a SQL Query to Get employeeNumber of President and VP of sales.
+Expected Output
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000925_1671794813_Employees%20Number%20Output.png
+
+Solution
+
+
+select employeeNumber from employees where jobTitle in ('President', 'VP sales');

@@ -1,0 +1,42 @@
+orders-customers-orderdetails
+Send Feedback
+Consider the following three tables.
+Table- orders
+orderNumber       | int                | 
+orderDate            | date             | 
+requiredDate       | date             | 
+shippedDate        | date             | 
+status                   | varchar(15) | 
+comments            | text              | 
+customerNumber | int                |
+
+Table- orderdetails
+orderNumber       | int                   | 
+productCode        | varchar(15)    | 
+quantityOrdered   | int                   | 
+priceEach             | decimal(10,2) | 
+orderLineNumber | smallint           |
+
+Table- customers
+customerNumber                  | int                 | 
+customerName                     | varchar(50)   |
+contactLastName                 | varchar(50)   | 
+contactFirstName                 | varchar(50)   | 
+phone                                   | varchar(50)   |
+addressLine1                        | varchar(50)   | 
+addressLine2                        | varchar(50)   | 
+city                                        | varchar(50)   | 
+state                                      | varchar(50)   | 
+postalCode                            | varchar(15)   | 
+country                                  | varchar(50)   | 
+salesRepEmployeeNumber  | int                  | 
+creditLimit                             | decimal(10,2) | 
+Previously you linked two tables together, that is orders and customers. You now want to analyze the details of these orders too. Connect the three tables- orders, customers and orderdetails such that the result set contains the information that is common to all three tables.
+Print orderNumber for such orders.
+
+
+SOlution
+
+
+select orders.orderNumber from orderdetails inner join orders ON orderdetails.orderNumber =orders.orderNumber
+inner join customers on orders.customerNumber=customers.customerNumber;

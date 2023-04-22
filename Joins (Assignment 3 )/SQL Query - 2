@@ -1,0 +1,25 @@
+SQL Query - 2
+Send Feedback
+Problem Statement:
+Fetch out all the employee ID’s and their contact detail who have been working from Delhi or have clients in Kolkata.
+
+Information about the table:
+Table Employee: 
+https://files.codingninjas.in/bq-12762.PNG
+Table Project: 
+https://files.codingninjas.in/table_2-16577.png
+Table Client_d: 
+https://files.codingninjas.in/b3-12761.PNG
+
+Output Table Structure:
+https://files.codingninjas.in/jt-query-2-16343.png
+
+Note-1: Write keywords of syntax in uppercase alphabets.
+Note-2: Use employee ID to link the two tables.
+
+SOlution
+
+
+select Employee.EmpId, Employee.EmailID , Employee.PhoneNo, Client_d.ClientFname,Client_d.ClientLname from Employee 
+join Client_d on Employee.EmpID = Client_d.EmpID 
+where Employee.city = "Delhi" or Client_d.city = "Kolkata";

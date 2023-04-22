@@ -1,0 +1,17 @@
+Employees
+Send Feedback
+Analyze the employees table.
+employees Table
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000896_1671690683_employees_sample.png
+
+The sales manager next wants to retrieve the data of all the employees in the company with a particular type of email. Retrieve the first name and last name of only those employees who have @classicmodelcars in their email address.
+Expected Output
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000930_1671797330_Employees%20C.png
+
+
+Solution
+
+
+select firstName,lastName from employees where email like'%classicmodelcars%';

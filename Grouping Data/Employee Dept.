@@ -1,0 +1,19 @@
+Employee Dept.
+Send Feedback
+Analyze the employees table. employees table is one of the tables in classicmodels database. It stores all employee information as well as the organization structure such as who reports to whom.
+employees Table
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000896_1671690683_employees_sample.png
+
+You want to check the employment status of each department. Write a Query to find the total number of employees in each department( department refers to JobTitle here).
+1. Name the jobTitle column as "Job Title"
+
+2. Name the count of employees column as "Employees Count".
+Expected Output
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000895_1671690675_Employee%20Dept%20output.png
+
+
+Solution
+
+
+Select jobTitle, count(*) from employees group by jobTitle;

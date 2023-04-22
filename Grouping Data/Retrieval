@@ -1,0 +1,16 @@
+Retrieval
+Send Feedback
+Given below is the details about the products table. products table stores a list of scale model cars.
+Table- products
+
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000921_1671787973_products_table_sample.png
+Result obtained from the last query is randomly distributed. You want to represent the result in a more structured manner. Write a SQL Query to list the productLines that has quantity in stock more than 50000 and then Sort the result in increasing order of quantity.
+Aliases for the output columns
+productLine AS "Product Line",
+SUM(quantityInStock) as "Sum of Stocks" 
+Expected Output
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000924_1671789073_retrieval_output.png
+
+Solution
+
+select productLine, sum(quantityInStock) from  products group by productLine having sum(quantityInStock)>50000 order by sum(quantityInStock) ;

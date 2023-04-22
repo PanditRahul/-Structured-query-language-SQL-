@@ -1,0 +1,16 @@
+Change Column Type
+Send Feedback
+Update Column type of 'DOB' column from table-Students to year data type.
+Data type year is going to hold a year in a two- or four-digit format.
+After updation, describe the Students table
+
+
+
+Solution
+
+
+
+alter table Students 
+modify Column DOB year ;
+
+desc Students;

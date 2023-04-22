@@ -1,0 +1,16 @@
+Filter Data
+Send Feedback
+You are required to analyse all the high and low selling products. Find out all the productCode and respective quantityOrdered where the ordered quantity is either greater than or equal to 50 or less than 25.
+Table- orderdetails
+orderNumber       | int                   | 
+productCode        | varchar(15)    | 
+quantityOrdered   | int                   | 
+priceEach             | decimal(10,2) | 
+orderLineNumber | smallint           |
+
+
+
+Solution
+
+
+select productCode,quantityOrdered from orderdetails where quantityOrdered >=50 Or quantityOrdered <25;

@@ -1,0 +1,20 @@
+SQL Query - 7
+Send Feedback
+Problem Statement:
+List out all the combinations possible for the employee’s name and projects that can exist(NULL included).
+
+Information about the table:
+Table Employee: https://files.codingninjas.in/bq-12762.PNG
+Table Project: https://files.codingninjas.in/table_2-16577.png
+Table Client_d: https://files.codingninjas.in/b3-12761.PNG
+
+Output Table Structure:https://files.codingninjas.in/jt-query-7-16348.png
+
+
+Note: Write keywords of syntax in uppercase alphabets.
+
+
+SOlution
+
+
+Select Employee.EmpFname, Employee.EmpLname, Project.ProjectID from Employee cross join Project;

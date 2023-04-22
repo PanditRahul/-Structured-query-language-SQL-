@@ -1,0 +1,30 @@
+Analyze
+Send Feedback
+Analyze the products table. products table is one of the tables in classicmodels database and stores a list of scale model cars. ( The database and tables are already created on the platform)
+Table- products
+productCode        | varchar(15)   |
+productName        | varchar(70)   | 
+productLine        | varchar(50)   | 
+productScale       | varchar(10)   | 
+productVendor      | varchar(50)   | 
+productDescription | text          | 
+quantityInStock    | smallint      | 
+buyPrice           | decimal(10,2) | 
+MSRP               | decimal(10,2) | 
+Print out all the details of the table.
+
+
+
+
+Solution
+
+
+show tables;
+desc products;
+SELECT 
+    *
+FROM
+    Products;
+
+
+
